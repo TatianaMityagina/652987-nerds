@@ -81,7 +81,7 @@
 
 <main>
   <section class="products-row">
-    <h2 class="visualli-hidden">Строка продуктов</h2>
+    <h2 class="visually-hidden">Строка продуктов</h2>
     <div class="container-1">
           <div class="item-web">
               <div class="products-image-1">
@@ -127,7 +127,7 @@
   </section>
 
   <section class="information container">
-     <h2 class="visualli-hidden">Информационный раздел</h2>
+     <h2 class="visually-hidden">Информационный раздел</h2>
      <div class="info">
          <span class="info-slogan">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
@@ -170,7 +170,7 @@
             </div>
             <div class="number">
                 <b>100
-                  <span cl ass="percent">%</span>
+                  <span class="percent">%</span>
                 </b>
                 <p>
                   Соблюдение сроков
@@ -231,5 +231,25 @@
       </p>
   </div>
 </footer>
+
+<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+  <fieldset>
+     <legend>Напишите нам</legend>
+     <div class="user-block">
+			  <div class="half-width">
+				  <label for="name">Ваше имя:</label>
+				  <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required>
+			  </div>
+			  <div class="half-width">
+				  <label for="email">Ваш e-mail:</label>
+				  <input type="text" name="email" id="email" placeholder="gmail@example.com" required>
+			  </div>
+	   </div>
+			 <label for="message">Текст письма:</label>
+			 <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+			 <input type="submit" class="btn" value="Отправить">
+  </fieldset>
+</form>
+
 </body>
 </html>
