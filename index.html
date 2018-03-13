@@ -232,24 +232,25 @@
   </div>
 </footer>
 
-<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-  <fieldset>
-     <legend>Напишите нам</legend>
-     <div class="user-block">
-			  <div class="half-width">
-				  <label for="name">Ваше имя:</label>
-				  <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required>
-			  </div>
-			  <div class="half-width">
-				  <label for="email">Ваш e-mail:</label>
-				  <input type="text" name="email" id="email" placeholder="gmail@example.com" required>
-			  </div>
-	   </div>
-		 <label for="message">Текст письма:</label>
-		 <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-  </fieldset>
-  <input type="submit" class="btn" value="Отправить">
-</form>
+<section class="modal modal-login">
+  <h2>Напишите нам</h2>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+       <div class="user-block">
+  			  <div class="half-width">
+  				  <label for="name">Ваше имя:</label>
+  				  <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required>
+  			  </div>
+  			  <div class="half-width">
+  				  <label for="email">Ваш e-mail:</label>
+  				  <input type="text" name="email" id="email" placeholder="gmail@example.com" required>
+  			  </div>
+  	   </div>
+  		 <label for="message">Текст письма:</label>
+  		 <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+       <input type="submit" class="btn" value="Отправить">
+  </form>
+</section>
+
 
 </body>
 </html>
