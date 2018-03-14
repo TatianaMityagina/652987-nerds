@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+/* =====  SLIDER ==== */
+
+.slider-background {
+  background-color: #eeeeee;
+}
+
+.slide-text {
+    color:#283136;
+}
+
+.slide-title {
+    font-size:55px;
+    line-height: 55px;
+    font-weight: bold;
+    color:black;
+}
+
+.slide-text a {
+  background-color: #fb565a;
+}
+
+.slide-text a:hover,
+.slide-text a:focus {
+  background-color: #e74246;
+}
+.slide-text a:active {
+  background-color: #d7373b;
+}
+
+/*=========================*/
+
+ .info-website h3,
+ .info-app h3,
+ .info-present h3 {
+    text-transform: uppercase;
+    color: black;
+ }
+
+ .item-web a {
+   background-color: #fb565a;
+ }
+
+ .item-web a:hover,
+ .item-web a:focus {
+   background-color: #e74246;
+ }
+ .item-web a:active {
+   background-color: #d7373b;
+ }
+
+ .item-app a {
+   background-color: #00ca74;
+ }
+
+ .item-app a:hover,
+ .item-app a:focus {
+   background-color: #00bc6c;
+ }
+ .item-app a:active {
+   background-color: #00aa62;
+ }
+
+ .item-presentation a {
+   background-color: #efc84a;
+ }
+
+ .item-presentation a:hover,
+ .item-presentation a:focus {
+   background-color: #eab534;
+ }
+ .item-presentation a:active {
+   background-color: #e5a722;
+ }
+
+ .info-slogan {
+   font-size: 45px;
+   line-height: 45px;
+   font-weight: 500;
+}
+
+.content-column-title {
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+}
+
+.number b {
+  font-size: 45px;
+  line-height: 10,06px;
+  color: black;
+  font-weight: bold;
+}
+
+.namber p {
+  font-size: 16px;
+  line-height: 18px;
+}
+ .number .percent {
+   font-size: 28px;
+   vertical-align: super;
+ }
+
+ /* ==== FOOTER ====*/
+
+.address h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.address p {
+  font-size: 16x;
+  line-height: 18px;
+}
+
+.address button {
+  background-color: #fb565a;
+}
+
+.footer-slogan b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+ /* ================*/
+
+/* ===== MODAL =====*/
+
+.modal {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.half-width label,
+.login-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form textarea {
+  font: inherit;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.login-form input:focus,
+.login-form textarea:focus {
+  border-color: #000000;
+}
+
+.login-form .btn {
+  background-color: #fb565a;
+}
+
+.modal button {
+  color: #fecccd;
+  background-color: transparent;
+}
+
+.modal button:focus {
+  color: #fb565a;
+}
+.modal button:active {
+  color: #ffeeee;
+}
+
+/* ===== CATALOG =====*/
+
+.title-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend,
+.results p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 20px;
+  color: #b8b8b8;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #4d4d4d;
+}
+
+.filter-input:disabled + label {
+  color: #ededed;
+}
+
+.catalog-form .form-btn {
+  background-color: #eeeeee;
+  color: black;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-form .form-btn:hover,
+.catalog-form .form-btn:focus {
+  background-color: #dfdfdf;
+}
+.catalog-form .form-btn:active {
+  background-color: #d5d5d5;
+  color: #959595;
+}
+
+
+.results ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+a.current {
+  opacity: 1;
+}
+
+.sort-types a {
+  color: #b2b2b2;
+}
+
+.sort-types a:hover,
+.sort-types a:focus {
+  color: #666666;
+}
+
+.sort-types a:active,
+.sort-types a:active {
+  color: #000000;
+}
+
+.layout-menu {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+
+.layout-menu .btn {
+  background-color: #fb565a;
+  border: 0;
+}
+
+.layout-menu .btn:hover,
+.layout-menu .btn:focus {
+   background-color: #e74246;
+ }
+
+ .layout-menu .btn:active {
+   background-color: #d7373b;
+ }
+
+.layout-menu p {
+  text-align: center;
+  line-height: 18px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.pagination-list li {
+  list-style: none;
+  background-color: #eeeeee;
+}
+
+.pagination-list a {
+  color: black;
+}
+
+.pagination-list a:hover {
+  background-color: #eeeeee;
+}
+
+.pagination-list a:focus{
+  background-color: #dfdfdf;
+}
+
+.pagination-list a:active {
+  background-color: #d5d5d5:
+  color: #959595;
+}
