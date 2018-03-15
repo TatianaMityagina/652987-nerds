@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
+  font-family: "Roboto", Arial, sans-serif;
   color: #283136;
 
   background-color: #ffffff;
@@ -16,16 +16,18 @@ a {
 }
 
 .btn {
-    padding: 10px 0;
-    font-size: 16px;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    border-radius: 3px;
-    border: 0;
-    cursor: pointer;
+  padding: 10px 0;
+
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
 }
 .main-header {
   background-color: #eeeeee;
@@ -35,8 +37,9 @@ a {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
+
 }
 
 .site-navigation,
@@ -63,14 +66,14 @@ a {
 }
 
 .slide-text {
-    color:#283136;
+  color:#283136;
 }
 
 .slide-title {
-    font-size:55px;
-    line-height: 55px;
-    font-weight: bold;
-    color:black;
+  font-size:55px;
+  line-height: 55px;
+  font-weight: bold;
+  color:black;
 }
 
 .slide-text a {
@@ -81,82 +84,87 @@ a {
 .slide-text a:focus {
   background-color: #e74246;
 }
+
 .slide-text a:active {
   background-color: #d7373b;
 }
 
 /*=========================*/
 
- .info-website h3,
- .info-app h3,
- .info-present h3 {
-    text-transform: uppercase;
-    color: black;
- }
+.info-website h3,
+.info-app h3,
+.info-present h3 {
+  text-transform: uppercase;
+  color: black;
+}
 
- .item-web a {
-   background-color: #fb565a;
- }
+.item-web a {
+  background-color: #fb565a;
+}
 
- .item-web a:hover,
- .item-web a:focus {
-   background-color: #e74246;
- }
- .item-web a:active {
-   background-color: #d7373b;
- }
+.item-web a:hover,
+.item-web a:focus {
+  background-color: #e74246;
+}
 
- .item-app a {
-   background-color: #00ca74;
- }
+.item-web a:active {
+  background-color: #d7373b;
+}
 
- .item-app a:hover,
- .item-app a:focus {
-   background-color: #00bc6c;
- }
- .item-app a:active {
-   background-color: #00aa62;
- }
+.item-app a {
+  background-color: #00ca74;
+}
 
- .item-presentation a {
-   background-color: #efc84a;
- }
+.item-app a:hover,
+.item-app a:focus {
+  background-color: #00bc6c;
+}
 
- .item-presentation a:hover,
- .item-presentation a:focus {
-   background-color: #eab534;
- }
- .item-presentation a:active {
-   background-color: #e5a722;
- }
+.item-app a:active {
+  background-color: #00aa62;
+}
 
- .info-slogan {
-   font-size: 45px;
-   line-height: 45px;
-   font-weight: 500;
+.item-presentation a {
+  background-color: #efc84a;
+}
+
+.item-presentation a:hover,
+.item-presentation a:focus {
+  background-color: #eab534;
+}
+
+.item-presentation a:active {
+  background-color: #e5a722;
+}
+
+.info-slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
 }
 
 .content-column-title {
   font-weight: 500;
-  color: black;
   text-transform: uppercase;
+  color: black;
 }
 
 .number b {
   font-size: 45px;
   line-height: 10,06px;
-  color: black;
   font-weight: bold;
+  color: black;
 }
 
 .namber p {
   font-size: 16px;
   line-height: 18px;
 }
- .number .percent {
-   font-size: 28px;
-   vertical-align: super;
- }
+
+.number .percent {
+  font-size: 28px;
+  vertical-align: super;
+}
 
  /* ==== FOOTER ====*/
 
@@ -164,8 +172,8 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: black;
   text-transform: uppercase;
+  color: black;
 }
 
 .address p {
@@ -238,6 +246,7 @@ a {
 .modal button:focus {
   color: #fb565a;
 }
+
 .modal button:active {
   color: #ffeeee;
 }
@@ -259,8 +268,8 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: black;
   text-transform: uppercase;
+  color: black;
 }
 
 .price-controls label {
@@ -269,6 +278,7 @@ a {
 
 .filters ul {
   list-style: none;
+
   line-height: 20px;
   color: #b8b8b8;
 }
@@ -283,24 +293,28 @@ a {
 }
 
 .catalog-form .form-btn {
-  background-color: #eeeeee;
-  color: black;
   font-size: 16px;
   line-height: 18px;
+  color: black;
+
+  background-color: #eeeeee;
 }
 
 .catalog-form .form-btn:hover,
 .catalog-form .form-btn:focus {
   background-color: #dfdfdf;
 }
+
 .catalog-form .form-btn:active {
-  background-color: #d5d5d5;
   color: #959595;
+
+  background-color: #d5d5d5;
 }
 
 
 .results ul {
   list-style: none;
+
   line-height: 18px;
 }
 
@@ -327,7 +341,6 @@ a.current {
   color: #000000;
 }
 
-
 .layout-menu .btn {
   background-color: #fb565a;
 }
@@ -335,21 +348,22 @@ a.current {
 .layout-menu .btn:hover,
 .layout-menu .btn:focus {
    background-color: #e74246;
- }
+}
 
- .layout-menu .btn:active {
-   background-color: #d7373b;
- }
+.layout-menu .btn:active {
+  background-color: #d7373b;
+}
 
 .layout-menu p {
-  text-align: center;
   line-height: 18px;
-  color: #666666;
   font-weight: 500;
+  text-align: center;
+  color: #666666;
 }
 
 .pagination-list li {
   list-style: none;
+
   background-color: #eeeeee;
 }
 
