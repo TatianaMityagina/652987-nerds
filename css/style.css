@@ -16,9 +16,9 @@ a {
 }
 
 .btn {
-  padding: 10px 0;
-
   font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -72,7 +72,7 @@ a {
 .slide-title {
   font-size:55px;
   line-height: 55px;
-  font-weight: bold;
+  font-weight: 500;
   color:black;
 }
 
@@ -94,6 +94,9 @@ a {
 .info-website h3,
 .info-app h3,
 .info-present h3 {
+  font-size:24px;
+  line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: black;
 }
@@ -156,7 +159,7 @@ a {
   color: black;
 }
 
-.namber p {
+.number p {
   font-size: 16px;
   line-height: 18px;
 }
@@ -177,7 +180,7 @@ a {
 }
 
 .address p {
-  font-size: 16x;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -295,6 +298,7 @@ a {
 .catalog-form .form-btn {
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: black;
 
   background-color: #eeeeee;
@@ -323,6 +327,8 @@ a.current {
 }
 
 .sort-types a {
+  font-size: 16px;
+  line-height: 20px;
   color: #b2b2b2;
 }
 
@@ -334,6 +340,19 @@ a.current {
 .sort-types a:active,
 .sort-types a:active {
   color: #000000;
+}
+
+.layout .layout-top {
+  background-color: #e9e9e9;
+}
+
+.layout .layout-top:hover,
+.layout .layout-top:focus {
+  background-color: #4d4d4d;
+}
+
+.layout-top span {
+  background-color: #ffffff;
 }
 
 .layout-menu {
@@ -356,7 +375,6 @@ a.current {
 
 .layout-menu p {
   line-height: 18px;
-  font-weight: 500;
   text-align: center;
   color: #666666;
 }
