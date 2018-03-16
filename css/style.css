@@ -29,19 +29,35 @@ a {
   border-radius: 3px;
   cursor: pointer;
 }
+
 .main-header {
-
-
   background-color: #eeeeee;
 }
 
+.container {
+  display: flex;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
 .main-navigation {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation,
@@ -410,6 +426,14 @@ a.current {
   color: black;
 
   background-color: #eeeeee;
+}
+
+.pagination-list .next {
+  text-transform: uppercase;
+}
+
+.pagination-list a {
+  color: black;
 }
 
 .pagination-list a:hover {
