@@ -30,6 +30,8 @@ a {
   cursor: pointer;
 }
 .main-header {
+
+
   background-color: #eeeeee;
 }
 
@@ -166,7 +168,7 @@ a {
 
 .number b {
   font-size: 45px;
-  line-height: 10,06px;
+  line-height: 10.06px;
   font-weight: bold;
   color: black;
 }
@@ -385,6 +387,14 @@ a.current {
   background-color: #d7373b;
 }
 
+.layout-menu h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
 .layout-menu p {
   line-height: 18px;
   text-align: center;
@@ -394,11 +404,12 @@ a.current {
 .pagination-list li {
   list-style: none;
 
-  background-color: #eeeeee;
-}
-
-.pagination-list a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   color: black;
+
+  background-color: #eeeeee;
 }
 
 .pagination-list a:hover {
