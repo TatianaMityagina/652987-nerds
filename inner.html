@@ -7,15 +7,15 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-<body>
+<body class="inner-page">
 
   <!--Шапка-->
 
 <header class="main-header">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
-        </a>
         <nav class="main-navigation">
+            <a class="main-header-logo">
+               <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
+            </a>
             <ul class="site-navigation">
                 <li>
                   <a href="#">Студия</a>
@@ -37,12 +37,12 @@
             </ul>
         </nav>
 </header>
-
 <h1 class="title-slogan">Магазин готовых шаблонов</h1>
+
 
   <!--Основная часть-->
 
-<main class="container">
+<main class="container-inner">
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр продуктов</h2>
@@ -111,7 +111,8 @@
       </form>
     </section>
 
-    <div class="results">
+    <div class="results-catalog">
+      <div class="results">
         <p>
           Сортировать:
         </p>
@@ -132,9 +133,10 @@
               <a class="more-to-less" href="#"></a>
             </li>
         </ul>
-    </div>
+      </div>
 
-    <section class="catalog">
+      <section class="catalog">
+       <div class="catalog-list">
         <div class="layout">
           <div  class="layout-top">
             <span></span>
@@ -242,22 +244,23 @@
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </div>
-
-        <ul class="pagination-list">
-           <li class="pagination-item pagination-item-catalog">
-             <a>1</a>
-           </li>
-           <li class="pagination-item">
-             <a href="#">2</a>
-           </li>
-           <li class="pagination-item">
-             <a href="#">3</a>
-           </li>
-           <li class="next">
-             <a href="#">Следующая</a>
-           </li>
-        </ul>
-    </section>
+       </div>
+       <ul class="pagination-list">
+            <li class="pagination-item pagination-item-catalog">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="next">
+              <a href="#">Следующая</a>
+            </li>
+       </ul>
+      </section>
+    </div>
 </main>
 
  <!--Подвал-->
@@ -265,34 +268,35 @@
 <footer class="main-footer">
    <div class="map">
        <div class="map-image">
-           <img width="1440" height="416" src="img/map.jpg" alt="Карта">
+         <img width="1440" height="416" src="img/map.jpg" alt="Карта">
        </div>
 
        <div class="address">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>
-            тел. +7 (812) 275-75-75
-          </p>
-          <button class="btn">Напишите нам</button>
+           <h3>NЁRDS DESIGN STUDIO</h3>
+           <p>
+             191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8
+           </p>
+           <p>
+                тел. +7 (812) 275-75-75
+           </p>
+           <button class="btn">Напишите нам</button>
        </div>
    </div>
-
-   <div class="icon-footer">
+   <div class="footer-icon-slogan">
+     <div class="icon-footer">
        <a href="https://twitter.com/" aria-label="Твиттер"></a>
        <a href="https://facebook.com/" aria-label="Фейсбук"></a>
        <a href="https://vk.com/" aria-label="ВКонтакте"></a>
-   </div>
-   <div class="footer-slogan">
-      <b>
-        Давайте дружить, это выгодно!
-      </b>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+     </div>
+     <div class="footer-slogan">
+       <b>
+         Давайте дружить, это выгодно!
+       </b>
+       <p>
+         Скидка 10% для друзей из социальных сетей.
+       </p>
+     </div>
    </div>
 </footer>
 
