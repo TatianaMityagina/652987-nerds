@@ -17,6 +17,14 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .btn {
   font-size: 16px;
   line-height: 18px;
@@ -96,6 +104,11 @@ a {
 .slider-controls {
   margin: 0;
   padding: 0;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
+  display: none;
 }
 
 .slides {
@@ -209,16 +222,55 @@ main .container {
 }
 
 .information .info {
+  display: flex;
+  flex-direction: column;
   width: 660px;
   margin: 0;
   padding: 0;
 }
 
+.info .info-slogan {
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.info p {
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.content-column-left {
+  margin-top: 0;
+  padding: 0;
+}
+
 .information .content-column-right {
+  display: flex;
+  flex-direction: column;
   width: 360px;
   margin: 0;
   padding: 0;
 }
+
+.main-header-illustration {
+  width: 360px;
+  height: 208px;
+  margin-bottom: 38px;
+  padding: 0;
+}
+
+.content-column-right  .number-info {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  margin-top: 45px;
+}
+
+.number-info .number {
+  margin: 0;
+  padding: 0;
+}
+
 
 .info-slogan {
   font-size: 45px;
@@ -227,6 +279,9 @@ main .container {
 }
 
 .content-column-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 500;
   text-transform: uppercase;
   color: black;
