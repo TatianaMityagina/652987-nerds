@@ -99,6 +99,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
   width: 440px;
   margin: 0;
   padding: 0;
@@ -788,6 +791,9 @@ a.current {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
   list-style: none;
