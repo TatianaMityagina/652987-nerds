@@ -7,12 +7,12 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-<body class="inner-page">
+<body>
 
   <!--Шапка-->
 
 <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
             <a class="main-header-logo">
                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
             </a>
@@ -42,17 +42,17 @@
 
   <!--Основная часть-->
 
-<main class="container-inner">
+<main class="container-inner container">
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр продуктов</h2>
       <form class="catalog-form" method="get" action="https://echo.htmlacademy.ru">
-       <fieldset>
+       <fieldset class="filter-item">
          <legend>Стоимость:</legend>
           <div class="range-filter">
              <div class="range-controls">
                  <div class="scale">
-                   <div class="bar"></div>
+                   <div class="bar" style="margin-left: 20%; width: 30%"></div>
                  </div>
                  <div class="toggle min-toggle"></div>
                  <div class="toggle max-toggle"></div>
@@ -283,7 +283,7 @@
            <button class="btn">Напишите нам</button>
        </div>
    </div>
-   <div class="footer-icon-slogan">
+   <div class="footer-icon-slogan container">
      <div class="icon-footer">
        <a href="https://twitter.com/" aria-label="Твиттер"></a>
        <a href="https://facebook.com/" aria-label="Фейсбук"></a>
