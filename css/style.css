@@ -615,7 +615,6 @@ main .partners {
 .container-inner .results-catalog {
   display: flex;
   flex-direction: column;
-  margin-left: 240px;
 }
 
 .results-catalog .results {
