@@ -54,12 +54,12 @@
                  <div class="scale">
                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
                  </div>
-                 <div class="toggle min-toggle"></div>
-                 <div class="toggle max-toggle"></div>
+                 <div class="toggle toggle-min"></div>
+                 <div class="toggle toggle-max"></div>
              </div>
              <div class="price-controls">
-               <label for="minprice">От<input type="text" name="minprice" id="minprice" value="0"></label>
-               <label for="maxprice">До<input type="text" name="maxprice" id="maxprice" value="15000"></label>
+               <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+               <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
              </div>
           </div>
        </fieldset>
@@ -68,15 +68,15 @@
          <legend>Сетка:</legend>
            <ul>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+               <input class="filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
                <label for="adaptive">Адаптивная</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fixed" value="fixed">
+               <input class="filter-input filter-input-radio" type="radio" name="grid" id="fixed" value="fixed">
                <label for="fixed">Фиксированная</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber" value="rubber" disabled>
+               <input class="filter-input filter-input-radio" type="radio" name="grid" id="rubber" value="rubber" disabled>
                <label for="rubber" disabled>Резиновая</label>
              </li>
            </ul>
@@ -86,23 +86,23 @@
          <legend>Особенности:</legend>
            <ul>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
                <label class="icon-check-off" for="slider">Слайдер</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
                <label class="icon-check-off" for="advantages">Блок преимуществ</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
                <label class="icon-check-off" for="news">Новости</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
                <label class="icon-check-off" for="gallery">Галерея</label>
              </li>
              <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
+               <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
                <label class="icon-check-off" for="basket">Корзина</label>
              </li>
           </ul>
