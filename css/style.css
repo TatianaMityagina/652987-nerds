@@ -564,6 +564,7 @@ main .partners {
   margin-bottom: 80px;
   padding-top: 47px;
   padding-bottom: 45px;
+
 }
 
 .patners-logo {
@@ -582,38 +583,6 @@ main .partners {
 .patners-logo:active {
   opacity: 10%;
 }
-
-.map {
-  height: 416px;
-  width: 100%;
-  position: relative;
-}
-
-.address {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-
-  bottom: 54px;
-  left: calc((100% - 1160px) / 2);
-
-  width: 320px;
-  height: 310px;
-  background-color: #ffffff;
-  color: #666666;
-  padding: 0 50px;
-  padding-top: 55px;
-  padding-bottom: 47px;
-  box-sizing: border-box;
-}
-
-.address .btn {
-  width: 219px;
-  height: 50px;
-  background-color: #fb565a;
-  margin-top: auto;
-}
-
  /* ==== FOOTER ====*/
 
 .main-footer {
@@ -688,8 +657,6 @@ main .partners {
 
   padding-top: 70px;
   padding-bottom: 70px;
-
-  background: rgba(234, 255, 45, 0.2);
 }
 
 .footer-icon-slogan .icon-footer {
@@ -703,7 +670,6 @@ main .partners {
   padding: 0;
 
   list-style: none;
-  background: rgba(234, 255, 45, 0.2);
 }
 
 .social-button {
