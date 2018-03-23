@@ -7,8 +7,6 @@ html {
 }
 
 body {
-  min-width: 1440px;
-  min-height: 2476px;
   margin: 0;
   padding: 0;
 
@@ -70,15 +68,14 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+  width: 100%;
   background-color: #eeeeee;
 }
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding-bottom: 18px;
+  align-items: flex-start;
+  flex-direction: row;
 
 
   font-size: 16px;
@@ -88,36 +85,31 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-
 .main-header-logo {
-  order: 0;
-
   width: 160px;
   height: 65px;
   padding-top: 49px;
+  margin-right: 201px;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+ .main-navigation a:hover,
+ .main-navigation a:focus {
   opacity: 80%;
 }
-.main-header-logo:active {
+.main-navigation a:active {
   opacity: 30%;
 }
 
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-
-
   width: 440px;
 }
 
 .user-navigation {
   display: flex;
-  max-width: 180px;
-  margin: 0;
+  width: 160px;
+  margin-left: 200px;
   padding: 0;
 }
 
@@ -131,9 +123,9 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   display: block;
-  padding-top: 80px;
+  padding-top: 75px;
   padding-bottom: 10px;
-  padding-right: ;
+
 
   vertical-align: middle;
   color: #000000;
@@ -141,11 +133,14 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a {
   display: block;
-  padding-top: 80px;
+  padding-top: 75px;
   padding-bottom: 10px;
+  margin-left: 234px;
 
   vertical-align: middle;
   color: #000000;
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .site-navigation a:hover,
@@ -192,7 +187,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 96px;
+  bottom: 105px;
   z-index: 100;
 
   width: 160px;
@@ -209,7 +204,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 15px;
+  padding: 18px;
 
   border-radius: 50%;
   cursor: pointer;
@@ -220,7 +215,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 9px;
   z-index: 1;
 
   width: 18px;
@@ -242,7 +237,7 @@ input[type="radio"].visually-hidden {
 
   width: 8px;
   height: 8px;
-  margin: -2px;
+  margin: -4px;
 
   background-color: inherit;
   border: 2px solid #c1c1c1;
@@ -304,7 +299,8 @@ input[type="radio"].visually-hidden {
 .slider-item .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  height: 50px;
+  padding: 15px 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -341,12 +337,12 @@ input[type="radio"].visually-hidden {
 
 .products-row .service {
   width: 300px;
-  margin-right: 100px;
-  padding: 0
+  margin-right: 110px;
+  padding: 0;
 }
 
 .service h3 {
-  padding-top: 26px;
+  padding: 0;
 
   font-size: 24px;
   line-height: 30px;
@@ -356,7 +352,6 @@ input[type="radio"].visually-hidden {
 
 .service p {
   padding: 0;
-  padding-top: 20px;
   padding-bottom: 35px;
 
 
@@ -614,6 +609,7 @@ main .partners {
 .address h3 {
   margin-left: 50px;
   margin-top: 50px;
+  margin-bottom: 25px;
   padding: 0;
 
 
@@ -625,8 +621,9 @@ main .partners {
 }
 
 .address p {
+  margin: 0;
   margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 0;
 
   font-size: 16px;
@@ -803,27 +800,11 @@ main .partners {
 
 /* ===== CATALOG =====*/
 
-.inner-page .main-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0;
-  padding-left: 20px;
-
-
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .title-slogan {
   margin: 0;
-  margin-bottom: 60px;
-  padding-top: 80px;
-  padding-bottom: 113px;
+  margin-bottom: 56px;
+  padding-top: 78px;
+  padding-bottom: 108px;
 
   font-size: 55px;
   text-align: center;
@@ -847,21 +828,22 @@ main .partners {
   padding: 0;
 }
 
-.filter-item {
+.filters .filter-item {
   margin: 0;
+  margin-bottom: 55px;
   padding: 0;
 
   border: none;
 }
 
-.range-filter {
-  width: 260px;
-  margin-top: 52px;
-}
-
 .filter-item legend {
   margin: 0;
   padding: 0;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 47px;
 }
 
 .range-controls {
@@ -946,21 +928,15 @@ main .partners {
   text-align: right;
 }
 
-.filters .filter-item {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 59px;
-
-  border: none;
-}
-
 .filters fieldset {
-  margin-bottom: 45px;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
 
   border: none;
 }
 
-.filters legend,
+fieldset legend,
 .results p {
   font-size: 18px;
   line-height: 30px;
@@ -969,10 +945,16 @@ main .partners {
   color: black;
 }
 
+.filter-option {
+  margin: 0;
+  padding-left: 35px;
+  padding-bottom: 18px;
+}
 
 .filters ul {
-   padding: 0;
+  padding: 0;
   margin: 0;
+  margin-top: 18px;
 
   list-style: none;
 
@@ -980,9 +962,10 @@ main .partners {
   color: #b8b8b8;
 }
 
-.filter-option {
-  margin-bottom: 15px;
-  padding-left: 30px;
+fieldset:nth-last-child(2) .filter-option  {
+  margin: 0;
+  padding-left: 35px;
+  padding-bottom: 20px;
 }
 
 .filter-option label {
@@ -1060,8 +1043,8 @@ main .partners {
 
 .catalog-form .form-btn {
   display: inline-block;
-  width: 100%;
-  margin-right: 0;
+  width: 260px;
+  margin-top: 25px;
   padding: 17px 0;
 
   font-size: 16px;
@@ -1096,25 +1079,31 @@ main .partners {
   width: 760px;
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 96px;
 }
 
 .results p {
   padding: 0;
   margin: 0;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .results .sort-types {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
-  width: 280px;
+  width: 380px;
   padding: 0;
   margin: 0;
-  margin-left: 263px;
+  margin-left: 265px;
 
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   background: rgba(255, 45, 82, 0.2);
   box-shadow: 0 0 0 3px rgb(255, 45, 82);
@@ -1129,21 +1118,31 @@ main .partners {
 
 .catalog .catalog-list {
   display: flex;
-  flex-direction: space-between;
   flex-wrap: wrap;
-  width: 760px;
   padding: 0;
+  margin: 0;
+
   margin-bottom: 60px;
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
+
 .layout-top {
+  position: absolute;
+
+  top: -40px;
+  left: 0;
+
   display: flex;
   align-items: center;
+
   height: 41px;
+  width: 360px;
+  padding-left: 7px;
+
   background-color: #eeeeee;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding-left: 7px;
 }
 
 .layout-top span {
@@ -1158,10 +1157,6 @@ main .partners {
   background-color: #ffffff;
 }
 
-.layout .layout-top {
-  background-color: #e9e9e9;
-}
-
 .layout .layout-top:hover,
 .layout .layout-top:focus {
   background-color: #4d4d4d;
@@ -1172,17 +1167,20 @@ main .partners {
 
   width: 360px;
   height: 576px;
+  margin: 0;
+  padding: 0;
   margin-right: 40px;
-  margin-bottom: 33px;
+  margin-bottom: 74px;
+
+    box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .catalog-list .layout:nth-child(2n) {
   margin-right: 0;
 }
-
-.pagination-list {
-  padding: 0;
-  margin: 0;
+.catalog-list .layout:nth-child(5),
+.catalog-list .layout:nth-child(6) {
+  margin-bottom: 0;
 }
 
 .results ul {
@@ -1196,8 +1194,11 @@ a.current {
 }
 
 .sort-types a {
-  font-size: 16px;
-  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  margin-right: 25px;
+
+
   color: #b2b2b2;
 }
 
@@ -1248,8 +1249,9 @@ a.current {
 }
 
 .layout-menu h3 {
-  margin-top: 31px;
-
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
 
   font-size: 18px;
   line-height: 30px;
@@ -1260,6 +1262,10 @@ a.current {
 }
 
 .layout-menu p {
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin: 0;
 
   line-height: 18px;
   text-align: center;
@@ -1273,28 +1279,22 @@ a.current {
   width: 460px;
   padding: 0;
   margin: 0;
-  list-style: none;
 
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: black;
+
+  list-style: none;
 }
 
-.pagination-list .next {
-  display: inline-block;
-
-  min-width: 260px;
-  height: 50px;
-
-  text-transform: uppercase;
-}
 
 .pagination-list a {
   display: inline-block;
 
   min-width: 50px;
   height: 50px;
+  margin: 0;
   margin-right: 11px;
   padding: 16px 19px;
 
@@ -1306,6 +1306,16 @@ a.current {
   background-color: #eeeeee;
 }
 
+.pagination-list .next a {
+  display: inline-block;
+
+  width: 260px;
+  height: 50px;
+  margin: 0;
+  padding: 16px 75px;
+
+  text-transform: uppercase;
+}
 
 .pagination-list a:hover,
 .pagination-list a:focus {
