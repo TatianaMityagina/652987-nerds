@@ -185,7 +185,6 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  margin-bottom: 80px;
 
   background-color: #eeeeee;
 }
@@ -193,7 +192,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 96px;
   z-index: 100;
 
   width: 160px;
@@ -204,24 +203,24 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
 }
 
-.slider-controls label {
+.slider-controls i {
   position: relative;
 
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;
+  padding: 15px;
 
   border-radius: 50%;
   cursor: pointer;
 }
 
-.slider-controls label::after {
+.slider-controls i::after {
   content: "";
 
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 8px;
+  left: 8px;
   z-index: 1;
 
   width: 18px;
@@ -229,6 +228,24 @@ input[type="radio"].visually-hidden {
 
   background: #ffffff;
 
+  border-radius: 50%;
+
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 8px;
+  height: 8px;
+  margin: -2px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
 
@@ -242,6 +259,11 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
+  margin-bottom: 80px;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
 }
 
 .slider-item:nth-child(1) {
@@ -262,34 +284,6 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
-  display: block;
-}
-
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
-  display: block;
-}
-
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
-  display: block;
-}
-
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-}
-
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
@@ -305,6 +299,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 38px;
 }
+
 
 .slider-item .button {
   display: block;
