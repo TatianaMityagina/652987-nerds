@@ -168,10 +168,12 @@
  </div>
 
  <div class="partners container">
+   <div class="border-logo">
       <a class="patners-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img width="199" height="68" src="img/logo-1.png" alt="html academy"></a>
-      <a class="patners-logo border-logo" href="#"><img width="209" height="90" src="img/logo-2.png" alt="Barbershop Borodinski"></a>
-      <a class="patners-logo border-logo" href="#"><img width="185" height="52" src="img/logo-3.png" alt="PINK"></a>
+      <a class="patners-logo" href="#"><img width="209" height="90" src="img/logo-2.png" alt="Barbershop Borodinski"></a>
+      <a class="patners-logo" href="#"><img width="185" height="52" src="img/logo-3.png" alt="PINK"></a>
       <a class="patners-logo" href="#"><img width="173" height="84" src="img/logo-4.png" alt="MISHKA"></a>
+   </div>
  </div>
 </main>
 
@@ -179,11 +181,8 @@
 
 <footer class="main-footer">
   <div class="map">
-      <div class="map-image">
-        <img width="1440" height="416" src="img/map.jpg" alt="Карта">
-      </div>
-
-      <div class="address">
+      <div class="container">
+        <div class="address">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
             191186, Санкт-Петербург,<br>
@@ -192,8 +191,10 @@
           <p>
                тел. +7 (812) 275-75-75
           </p>
-          <button class="btn">Напишите нам</button>
+          <a href="#" class="btn">Напишите нам</a>
+        </div>
       </div>
+      <img width="1440" height="416" src="img/map.jpg" alt="Карта">
   </div>
   <div class="footer-icon-slogan container">
     <ul class="icon-footer">
@@ -204,8 +205,10 @@
         </svg>
       </a></li>
       <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
-        </a></li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+          <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
+        </svg>
+      </a></li>
       <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
           <path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff">
@@ -227,21 +230,21 @@
 <section class="modal modal-login">
   <h2>Напишите нам</h2>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-       <div class="user-block">
-  			  <p class="half-width">
-  				  <label for="name">Ваше имя:</label>
-  				  <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required>
-  			  </p>
-  			  <p class="half-width">
-  				  <label for="email">Ваш e-mail:</label>
-  				  <input type="text" name="email" id="email" placeholder="gmail@example.com" required>
-  			  </p>
-  	   </div>
-  		 <label for="message">Текст письма:</label>
-  		 <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-       <input type="submit" class="btn" value="Отправить">
+    <div class="user-block">
+       <p class="half-width">
+  			 <label for="name">Ваше имя:</label> <br>
+  			 <input name="your-name" id="name" type="text" placeholder="Имя Фамилия" required>
+  		 </p>
+  		 <p class="half-width">
+  			 <label for="email">Ваш e-mail:</label> <br>
+  			 <input type="text" name="email" id="email" placeholder="gmail@example.com" required>
+  		 </p>
+    </div>
+  	<label for="message">Текст письма:</label> <br>
+  	<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+    <input type="submit" class="btn" value="Отправить">
   </form>
-  <button class="modal-close" type="button">x</button>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 
