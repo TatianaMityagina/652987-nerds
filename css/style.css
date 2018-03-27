@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
   width: 160px;
   height: 65px;
   padding-top: 49px;
-  margin-right: 201px;
+  margin-right: 202px;
 }
 
 .main-header-logo:hover,
@@ -211,13 +211,15 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
 
+  margin-bottom: 80px;
+
   background-color: #eeeeee;
 }
 
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 105px;
+  bottom: 104px;
   z-index: 100;
 
   width: 160px;
@@ -228,7 +230,7 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
 }
 
-.slider-controls i {
+.slider-controls label {
   position: relative;
 
   display: inline-block;
@@ -240,12 +242,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
   content: "";
 
   position: absolute;
   top: 8px;
-  left: 9px;
+  left: 8px;
   z-index: 1;
 
   width: 18px;
@@ -253,23 +255,6 @@ input[type="radio"].visually-hidden {
 
   background: #ffffff;
 
-  border-radius: 50%;
-}
-
-.slider-controls .active::before {
-  content: "";
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-
-  width: 8px;
-  height: 8px;
-  margin: -4px;
-
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
 
@@ -283,11 +268,6 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: none;
   padding: 78px 0 80px 0;
-  margin-bottom: 80px;
-}
-
-.slider-item:nth-child(1) {
-  display: block;
 }
 
 .slider-item:nth-child(1) {
@@ -306,6 +286,34 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .slider-item h3 {
@@ -611,40 +619,45 @@ main .container {
 
 .partners .border-logo {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  padding-bottom: 36px;
+
+  padding-bottom: 34px;
   margin-bottom: 80px;
 
   border-bottom: 2px solid #eeeeee;
 }
 
-.patners-logo {
+.border-logo p {
   position: relative;
 
   width: 260px;
+
   padding: 0;
-  padding-top: 47px;
+  padding-top: 49px;
   margin: 0;
 
   text-align: center;
-
-  opacity: 0.2;
 }
 
-.patners-logo:before {
+.border-logo p:not(:last-child)::after {
   position: absolute;
+
   content: "";
+  right: -21px;
+  top: 63%;
 
-  top: 50px;
-  right: -20px;
-
+  display: block;
   width: 2px;
-  height: 53px;
+  height: 52px;
 
-  background-color: #000000;
+  background-color: #eeeeee;
+  transform: translateY(-50%)
+}
+
+.patners-logo {
+  opacity: 0.2;
 }
 
 .patners-logo:hover,
@@ -681,9 +694,9 @@ main .container {
 }
 
 .address h3 {
-  margin-left: 50px;
+  margin-left: 52px;
   margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
 
   font-size: 18px;
@@ -695,7 +708,7 @@ main .container {
 
 .address p {
   margin: 0;
-  margin-left: 50px;
+  margin-left: 52px;
   margin-bottom: 17px;
   padding: 0;
 
@@ -706,7 +719,7 @@ main .container {
 }
 
 .address p:nth-child(3) {
-  margin-left: 50px;
+  margin-left: 52px;
   margin-bottom: 35px;
   padding: 0;
 
@@ -942,7 +955,7 @@ main .container {
   color: #283136;
 
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #eeeeee;
 }
 
@@ -1159,7 +1172,7 @@ fieldset:nth-last-child(2) .filter-option  {
   color: #000000;
 }
 
-.current a {
+.sort-types .current {
   color: #000000;
 }
 
@@ -1218,7 +1231,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .catalog-list .layout {
@@ -1228,9 +1241,7 @@ fieldset:nth-last-child(2) .filter-option  {
   margin: 0;
   padding: 0;
   margin-right: 40px;
-  margin-bottom: 74px;
-
- box-shadow: 0 0 0 3px rgb(255, 45, 82);
+  margin-bottom: 28px;
 }
 
 .catalog-list .layout:nth-child(2n) {
@@ -1247,11 +1258,12 @@ fieldset:nth-last-child(2) .filter-option  {
   width: 360px;
   height: 40px;
 
-  content: url("http://placehold.it/360x40/dddddd");
+  content: url("../img/browser.svg");
+  opacity: 0.12;
 }
 
 .layout:hover {
-    // cursor: pointer;
+  cursor: pointer;
 }
 
 .layout:hover::before {
@@ -1259,23 +1271,23 @@ fieldset:nth-last-child(2) .filter-option  {
   width: 360px;
   height: 40px;
 
-  content: url("http://placehold.it/360x40/222222");
+  content: url("../img/browser.svg");
+  opacity: 1;
 }
 
 .layout-menu {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 
   visibility: hidden;
   width: 360px;
-  padding: 35px 80px;
-
-  text-align: center;
-  background-color: #eee;
+  padding: 33px;
 
   background-color: #eeeeee;
+
+  text-align: center;
   color: #000000;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .layout:hover .layout-menu {
@@ -1285,22 +1297,28 @@ fieldset:nth-last-child(2) .filter-option  {
 .layout-menu b {
   font-size: 18px;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .layout-menu p {
-  margin-bottom: 30px;
-  margin-top: 18px;
+  margin-bottom: 28px;
+  margin-top: 19px;
 
   font-size: 16px;
   line-height: 18px;
 
+  text-align: center;
   color: #666;
 }
 
 .layout-menu a {
   display: block;
-  padding: 20px;
+
+  width: 200px;
+  padding: 15px;
+  margin-bottom: 9px;
+  margin-left: 49px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1311,6 +1329,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
   background-color: #fb565a;
   border-radius: 3px;
+    border: 2px solid red;
 }
 
 .layout-menu .a:hover,
@@ -1405,6 +1424,8 @@ fieldset:nth-last-child(2) .filter-option  {
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  z-index: 2000;
 }
 
 .modal-login {
@@ -1412,7 +1433,7 @@ fieldset:nth-last-child(2) .filter-option  {
   left: 240px;
 
   display: none;
-
+  
   width: 960px;
   margin: 0;
   padding: 0 100px;
@@ -1422,7 +1443,6 @@ fieldset:nth-last-child(2) .filter-option  {
   position: absolute;
   top: 75px;
   right: 90px;
-
 
   width: 22px;
   height: 22px;
