@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -77,7 +78,6 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   flex-direction: row;
 
-
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -140,11 +140,21 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.user-navigation a {
+
+.user-navigation li {
   display: block;
   padding-top: 75px;
   padding-bottom: 10px;
   margin-left: 234px;
+
+  vertical-align: middle;
+
+  color: #000000;
+}
+
+.user-navigation a {
+  padding: 0;
+  margin: 0;
 
   vertical-align: middle;
 
@@ -165,14 +175,14 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .header-basket  {
   position: relative;
+
   padding-left: 50px;
 }
 
 .header-basket::before {
-  content: "";
-
   position: absolute;
-  top: 82px;
+  content: "";
+  top: 0;
   left: 10px;
 
   width: 20px;
@@ -197,7 +207,6 @@ input[type="radio"].visually-hidden {
 .site-navigation-inner::after {
   position: absolute;
   content: "";
-
   bottom: 4px;
 
   height: 2px;
@@ -254,7 +263,6 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   background: #ffffff;
-
   border-radius: 50%;
 }
 
@@ -308,9 +316,11 @@ input[type="radio"].visually-hidden {
   left: 17px;
   top: 17px;
   z-index: 2;
+
   width: 8px;
   height: 8px;
   margin: -4px;
+
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
@@ -334,6 +344,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item .button {
   display: block;
+
   width: 240px;
   height: 50px;
   padding: 15px 0;
@@ -356,8 +367,9 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item .button:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -399,7 +411,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 30px;
   margin: 0;
 
-
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -407,9 +418,10 @@ input[type="radio"].visually-hidden {
 
 .service a {
   display: inline-block;
-  padding: 17px 39px;
+
   width: 160px;
   height: 50px;
+  padding: 17px 39px;
 
   font-size: 16px;
   line-height: 18px;
@@ -429,8 +441,9 @@ input[type="radio"].visually-hidden {
 }
 
 .item-web a:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -444,8 +457,9 @@ input[type="radio"].visually-hidden {
 }
 
 .item-app a:active {
-  background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -459,20 +473,23 @@ input[type="radio"].visually-hidden {
 }
 
 .item-presentation a:active {
-  background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #e5a722;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 main .container {
   display: flex;
   flex-direction: column;
+
   padding: 0 20px;
 }
 
 .container .info {
   display: flex;
   justify-content: space-between;
+
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -622,7 +639,6 @@ main .container {
   justify-content: space-between;
   align-items: center;
 
-
   padding-bottom: 34px;
   margin-bottom: 80px;
 
@@ -643,7 +659,6 @@ main .container {
 
 .border-logo p:not(:last-child)::after {
   position: absolute;
-
   content: "";
   right: -21px;
   top: 63%;
@@ -682,7 +697,6 @@ main .container {
 
 .main-footer .address {
   position: absolute;
-
   top: 54px;
 
   width: 320px;
@@ -747,6 +761,7 @@ main .container {
 
 .address a:active {
   color: rgba(255, 255, 255, 0.3);
+
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -891,7 +906,6 @@ main .container {
   padding-left: 20px;
 
   background-color: #eeeeee;
-
   border-radius: 5px;
 }
 
@@ -991,10 +1005,10 @@ fieldset legend,
   margin: 0;
   margin-top: 18px;
 
-  list-style: none;
-
   line-height: 20px;
   color: #b8b8b8;
+
+  list-style: none;
 }
 
 fieldset:nth-last-child(2) .filter-option  {
@@ -1022,9 +1036,8 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .filter-input-radio + label::before {
-  content: "";
-
   position: absolute;
+  content: "";
   left: -35px;
   top: -3px;
 
@@ -1038,8 +1051,8 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
   position: absolute;
+  content: "";
   left: -35px;
   top: -3px;
 
@@ -1067,16 +1080,12 @@ fieldset:nth-last-child(2) .filter-option  {
 .filter-input-radio + label:hover::before,
 .filter-input-radio + label:active::before,
 .filter-input-radio + label:focus::before{
- background-image: url("../img/radio-on.svg");
-
  opacity: 1;
 }
 
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox + label:focus::before,
 .filter-input-checkbox + label:active::before {
-  background-image: url("../img/checkbox-on.svg");
-
   opacity: 1;
 }
 
@@ -1150,9 +1159,9 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .results ul {
-  list-style: none;
-
   line-height: 18px;
+
+  list-style: none;
 }
 
 .sort-types a {
@@ -1177,30 +1186,31 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .less-to-more::before {
-  content: "";
   position: absolute;
+  content: "";
 
   bottom: 2px;
   right: 30px;
-  margin: 0;
-  padding: 0;
 
   width: 12px;
   height: 10px;
+  margin: 0;
+  padding: 0;
+
   background: #ffffff url("../img/icon-down-dir.svg") no-repeat;
 }
 
 .more-to-less::before {
-  content: "";
   position: absolute;
-
+  content: "";
   bottom: 2px;
   right: 0px;
-  margin: 0;
-  padding: 0;
 
   width: 12px;
   height: 10px;
+  margin: 0;
+  padding: 0;
+
   background: #ffffff url("../img/icon-up-dir.svg") no-repeat;
 
   opacity: 0.2;
@@ -1283,10 +1293,10 @@ fieldset:nth-last-child(2) .filter-option  {
   width: 360px;
   padding: 33px;
 
-  background-color: #eeeeee;
-
   text-align: center;
   color: #000000;
+
+  background-color: #eeeeee;
   cursor: pointer;
 }
 
@@ -1307,7 +1317,6 @@ fieldset:nth-last-child(2) .filter-option  {
 
   font-size: 16px;
   line-height: 18px;
-
   text-align: center;
   color: #666;
 }
@@ -1323,13 +1332,11 @@ fieldset:nth-last-child(2) .filter-option  {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-
   text-decoration: none;
   color: white;
 
   background-color: #fb565a;
   border-radius: 3px;
-    border: 2px solid red;
 }
 
 .layout-menu .a:hover,
@@ -1366,12 +1373,10 @@ fieldset:nth-last-child(2) .filter-option  {
   margin-right: 11px;
   padding: 16px 19px;
 
-  background-color: #eeeeee;
-  border-radius: 3px;
-
   color: #000000;
 
   background-color: #eeeeee;
+  border-radius: 3px;
 }
 
 .pagination-list .next a {
@@ -1417,6 +1422,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .modal {
   position: fixed;
+  z-index: 2000;
 
   color: #000000;
 
@@ -1425,7 +1431,6 @@ fieldset:nth-last-child(2) .filter-option  {
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
-  z-index: 2000;
 }
 
 .modal-login {
@@ -1433,7 +1438,7 @@ fieldset:nth-last-child(2) .filter-option  {
   left: 240px;
 
   display: none;
-  
+
   width: 960px;
   margin: 0;
   padding: 0 100px;
@@ -1456,9 +1461,8 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .modal-close::before,
 .modal-close::after {
-  content: "";
-
   position: absolute;
+  content: "";
   top: 7px;
   left: 0px;
 
@@ -1563,7 +1567,6 @@ fieldset:nth-last-child(2) .filter-option  {
 
   width: 260px;
   height: 50px;
-
   margin-top: 47px;
   margin-bottom: 84px;
 
