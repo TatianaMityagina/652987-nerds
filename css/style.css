@@ -1242,7 +1242,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .catalog-list .layout {
@@ -1252,16 +1252,15 @@ fieldset:nth-last-child(2) .filter-option  {
   margin: 0;
   padding: 0;
   margin-right: 40px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .catalog-list .layout:nth-child(2n) {
   margin-right: 0;
 }
 
-.catalog-list .layout:nth-child(5),
-.catalog-list .layout:nth-child(6) {
-  margin-bottom: 0;
+.catalog-list .layout:nth-last-child(n) {
+  margin: 0;
 }
 
 .layout::before {
@@ -1305,16 +1304,9 @@ fieldset:nth-last-child(2) .filter-option  {
   visibility: visible;
 }
 
-.layout-menu b {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .layout-menu p {
-  margin-bottom: 28px;
-  margin-top: 19px;
+  margin-bottom: 30px;
+  margin-top: 18px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1322,12 +1314,21 @@ fieldset:nth-last-child(2) .filter-option  {
   color: #666;
 }
 
-.layout-menu a {
+.layout-menu  a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.layout-menu .btn {
   display: block;
 
   width: 200px;
   padding: 15px;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   margin-left: 49px;
 
   font-size: 16px;
@@ -1340,12 +1341,12 @@ fieldset:nth-last-child(2) .filter-option  {
   border-radius: 3px;
 }
 
-.layout-menu .a:hover,
-.layout-menu .a:focus {
+.layout-menu .btn:hover,
+.layout-menu .btn:focus {
   background-color: #e74246;
 }
 
-.layout-menu .a:active {
+.layout-menu .btn:active {
   background-color: #d7373b;
 }
 
