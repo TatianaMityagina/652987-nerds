@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -139,7 +141,6 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
 }
-
 
 .user-navigation li {
   display: block;
@@ -600,6 +601,7 @@ main .container {
 
   width: 25px;
   height: 2px;
+
   background-color: #fb565a;
 }
 
@@ -765,7 +767,6 @@ main .container {
 
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-
 
 .main-footer .footer-icon-slogan {
   display: flex;
@@ -1428,7 +1429,6 @@ fieldset:nth-last-child(2) .filter-option  {
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
 }
 
 .modal-login {
