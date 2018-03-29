@@ -1259,7 +1259,11 @@ fieldset:nth-last-child(2) .filter-option  {
   margin-right: 0;
 }
 
-.catalog-list .layout:nth-last-child(n) {
+.catalog-list .layout:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.layout:not(:nth-last-child(1)):not(:nth-last-child(2)) {
   margin: 0;
 }
 
