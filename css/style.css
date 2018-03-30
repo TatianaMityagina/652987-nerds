@@ -1031,7 +1031,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .filter-input:hover + label,
 .filter-input:focus + label {
-  color: #283136;
+  color: #000000;
 }
 
 .filter-input:disabled + label {
