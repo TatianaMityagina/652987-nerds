@@ -1029,8 +1029,8 @@ fieldset:nth-last-child(2) .filter-option  {
   color: #283136;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label {
+.filter-input + label:hover,
+.filter-input + label:focus {
   color: #000000;
 }
 
