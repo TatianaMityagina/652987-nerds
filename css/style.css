@@ -1290,7 +1290,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .layout-menu {
   position: absolute;
-  bottom: 5px;
+  bottom: 6px;
 
   visibility: hidden;
   width: 360px;
@@ -1308,8 +1308,11 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .layout-menu p {
+  max-height: 413px;
   margin-bottom: 30px;
   margin-top: 18px;
+
+  overflow: hidden;
 
   font-size: 16px;
   line-height: 18px;
