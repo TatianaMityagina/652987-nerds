@@ -1026,15 +1026,16 @@ fieldset:nth-last-child(2) .filter-option  {
 
   cursor: pointer;
   user-select: none;
+  color: #283136;
 }
 
 .filter-input:hover + label,
 .filter-input:focus + label {
-  color: #4d4d4d;
+  color: #283136;
 }
 
 .filter-input:disabled + label {
-  color: #ededed;
+  color: #bec1c2;
 }
 
 .filter-input-radio + label::before {
@@ -1089,6 +1090,11 @@ fieldset:nth-last-child(2) .filter-option  {
 .filter-input-checkbox + label:focus::before,
 .filter-input-checkbox + label:active::before {
   opacity: 1;
+}
+
+.filter-input-radio + label:disabled::before,
+.filter-input-checkbox + label:disabled::before {
+  opacity: 0.1;
 }
 
 .catalog-form .form-btn {
