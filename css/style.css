@@ -174,7 +174,7 @@ input[type="radio"].visually-hidden {
   color: #a6a6a6;
 }
 
-.user-navigation .header-basket  {
+.user-navigation .header-basket {
   position: relative;
 
   padding-left: 50px;
@@ -336,6 +336,7 @@ input[type="radio"].visually-hidden {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: #000000;
 }
 
 .slider-item p {
@@ -353,6 +354,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -539,7 +541,7 @@ main .container {
   padding: 0;
 }
 
-.content-column-right  .number-info {
+.content-column-right .number-info {
   display: flex;
   justify-content: space-between;
 
@@ -561,6 +563,7 @@ main .container {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000000;
 }
 
 .info-agregate p {
@@ -574,7 +577,7 @@ main .container {
   padding: 0;
   padding-bottom: 13px;
 
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   color: black;
 }
@@ -611,7 +614,7 @@ main .container {
   padding-left: 18px;
   padding-bottom: 12px;
 
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   color: black;
 }
@@ -698,6 +701,10 @@ main .container {
   position: relative;
 }
 
+.map img {
+  width: 100%;
+}
+
 .main-footer .address {
   position: absolute;
   top: 54px;
@@ -711,7 +718,7 @@ main .container {
 }
 
 .address h3 {
-  margin-left: 52px;
+  margin-left: 51px;
   margin-top: 50px;
   margin-bottom: 24px;
   padding: 0;
@@ -724,6 +731,7 @@ main .container {
 }
 
 .address p {
+  width: 205px;
   margin: 0;
   margin-left: 52px;
   margin-bottom: 17px;
@@ -841,7 +849,7 @@ main .container {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  color: #283136;
+  color: #444444;
 }
 
 /* ===== CATALOG =====*/
@@ -876,7 +884,7 @@ main .container {
 
 .filters .filter-item {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   padding: 0;
 
   border: none;
@@ -902,7 +910,7 @@ main .container {
   position: relative;
 
   height: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -957,6 +965,7 @@ main .container {
   width: 50%;
 
   font-size: 16px;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -965,8 +974,9 @@ main .container {
   padding: 8px 10px;
   margin-left: 10px;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
 
@@ -1177,20 +1187,28 @@ fieldset:nth-last-child(2) .filter-option  {
   margin: 0;
   margin-right: 25px;
 
-  color: #b2b2b2;
+  color: #000000;
+
+  opacity: 0.3;
 }
 
 .sort-types a:hover,
 .sort-types a:focus {
-  color: #666666;
+  color: #000000;
+
+  opacity: 0.6;
 }
 
 .sort-types a:active {
   color: #000000;
+
+  opacity: 1;
 }
 
 .sort-types .current {
   color: #000000;
+
+  opacity: 1;
 }
 
 .less-to-more::before {
@@ -1220,8 +1238,6 @@ fieldset:nth-last-child(2) .filter-option  {
   padding: 0;
 
   background: #ffffff url("../img/icon-up-dir.svg") no-repeat;
-
-  opacity: 0.2;
 }
 
 .less-to-more:hover::before,
@@ -1308,7 +1324,9 @@ fieldset:nth-last-child(2) .filter-option  {
 }
 
 .layout-menu p {
+  width: 182px;
   max-height: 413px;
+  margin-left: 58px;
   margin-bottom: 30px;
   margin-top: 18px;
 
@@ -1320,7 +1338,7 @@ fieldset:nth-last-child(2) .filter-option  {
   color: #666;
 }
 
-.layout-menu  a {
+.layout-menu a {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -1339,6 +1357,7 @@ fieldset:nth-last-child(2) .filter-option  {
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -1462,6 +1481,7 @@ fieldset:nth-last-child(2) .filter-option  {
   font-size: 0;
 
   border: 0;
+  background-color: #ffffff;
 
   cursor: pointer;
 }
@@ -1522,6 +1542,11 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .half-width label,
 .login-form label {
+  display: block;
+
+  width: 110px;
+  margin-bottom: 10px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
@@ -1533,6 +1558,7 @@ fieldset:nth-last-child(2) .filter-option  {
   padding: 15px 15px;
 
   font: inherit;
+  line-height: 18px;
   color: #000000;
 
   background-color: #ffffff;
@@ -1547,6 +1573,7 @@ fieldset:nth-last-child(2) .filter-option  {
   padding-bottom: 85px;
 
   font: inherit;
+  line-height: 18px;
   color: #000000;
 
   background-color: #ffffff;
