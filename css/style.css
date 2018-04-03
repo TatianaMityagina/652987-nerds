@@ -1474,13 +1474,15 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .modal-login {
   top: 90px;
+  left: 50%;
 
   display: none;
 
   width: 960px;
   margin: 0;
-  margin-left: 240px;
   padding: 0 100px;
+
+  transform: translateX(-50%);
 }
 
 .modal-close {
