@@ -1489,7 +1489,7 @@ fieldset:nth-last-child(2) .filter-option  {
 .modal-close {
   position: absolute;
   top: 75px;
-  right: 90px;
+  right: 92px;
 
   width: 22px;
   height: 22px;
@@ -1506,8 +1506,8 @@ fieldset:nth-last-child(2) .filter-option  {
 .modal-close::after {
   position: absolute;
   content: "";
-  top: 7px;
-  left: 0px;
+  top: 9px;
+  left: 1.5px;
 
   width: 19px;
   height: 3px;
