@@ -197,10 +197,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation-inner a[href] {
-  pointer-events: none;
-}
-
 .site-navigation-inner a:not([href]) {
   background-color: #eeeeee;
 }
@@ -411,6 +407,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service p {
+  width: 245px;
   padding: 0;
   padding-bottom: 30px;
   margin: 0;
@@ -505,8 +502,8 @@ main .container {
   width: 360px;
   height: 208px;
   margin: 0;
+  margin-top: 38px;
   padding: 0;
-  padding-top: 40px;
 }
 
 .info-agregate {
@@ -719,7 +716,7 @@ main .container {
 
 .address h3 {
   margin-left: 51px;
-  margin-top: 50px;
+  margin-top: 49px;
   margin-bottom: 24px;
   padding: 0;
 
@@ -734,18 +731,7 @@ main .container {
   width: 205px;
   margin: 0;
   margin-left: 52px;
-  margin-bottom: 17px;
-  padding: 0;
-
-  font-size: 16px;
-  line-height: 18px;
-
-  color: #666666;
-}
-
-.address p:nth-child(3) {
-  margin-left: 52px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-size: 16px;
@@ -760,7 +746,7 @@ main .container {
   height: 50px;
 
   margin-left: 50px;
-  padding: 15px 25px;
+  padding: 17px 25px;
 
   background-color: #fb565a;
 }
@@ -774,6 +760,33 @@ main .container {
   color: rgba(255, 255, 255, 0.3);
 
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.address .phone {
+  margin: 0;
+  margin-left: 52px;
+  margin-bottom: 2px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+
+  background-color: #ffffff;
+}
+
+.address .phone:hover,
+.address .phone:focus {
+  color: #666666;
+
+  background-color: #ffffff;
+}
+
+.address .phone:active {
+  color: #666666;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 0;
 }
 
 .main-footer .footer-icon-slogan {
@@ -1092,8 +1105,8 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .filter-input-radio + label:hover::before,
 .filter-input-radio + label:active::before,
-.filter-input-radio + label:focus::before{
- opacity: 1;
+.filter-input-radio + label:focus::before {
+  opacity: 1;
 }
 
 .filter-input-checkbox + label:hover::before,
@@ -1461,12 +1474,12 @@ fieldset:nth-last-child(2) .filter-option  {
 
 .modal-login {
   top: 90px;
-  left: 240px;
 
   display: none;
 
   width: 960px;
   margin: 0;
+  margin-left: 240px;
   padding: 0 100px;
 }
 
@@ -1552,43 +1565,51 @@ fieldset:nth-last-child(2) .filter-option  {
   font-weight: bold;
 }
 
-.login-form input[type="text"]{
+.login-form input[type="text"] {
   box-sizing: border-box;
   width: 360px;
   padding: 15px 15px;
 
   font: inherit;
   line-height: 18px;
-  color: #000000;
+  color: #444444;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
-  border-radius: 2px;
+  border-radius: 3px;
+
+  opacity: 0.5;
 }
 
 .login-form textarea {
   box-sizing: border-box;
   width: 760px;
-  padding: 15px 15px;
-  padding-bottom: 85px;
+  padding: 12px 12px;
+  padding-bottom: 86px;
 
   font: inherit;
   line-height: 18px;
-  color: #000000;
+  color: #444444;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+
+  opacity: 0.5;
 }
 
 .login-form input:hover,
 .login-form textarea:hover {
   border-color: #b4b9bb;
+
+  opacity: 1;
 }
 
 .login-form input:focus,
 .login-form textarea:focus {
   border-color: #000000;
+
+  opacity: 1;
 }
 
 .login-form input:invalid,
