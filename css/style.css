@@ -699,17 +699,23 @@ main .container {
 }
 
 .map img {
+  position: absolute;
+
   width: 1440px;
   height: 416px;
 }
 
 .map iframe {
+  position: absolute;
+  z-index: 3;
+  
   width: 100%;
 }
 
 .main-footer .address {
   position: absolute;
   top: 54px;
+  z-index: 4;
 
   width: 320px;
   height: 308px;
