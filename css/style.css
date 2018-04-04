@@ -698,6 +698,11 @@ main .container {
   position: relative;
 }
 
+.map img {
+  width: 1440px;
+  height: 416px;
+}
+
 .map iframe {
   width: 100%;
 }
